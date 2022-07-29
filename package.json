@@ -4,7 +4,7 @@
   "description": "Messaging App",
   "main": "server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/app.js"
   },
   "author": "Mohamed Saleem",
   "license": "ISC",
@@ -12,6 +12,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.4.5"
+    "http-errors": "^2.0.0",
+    "joi": "^17.6.0",
+    "mongoose": "^6.4.5",
+    "validator": "^13.7.0"
   }
 }
