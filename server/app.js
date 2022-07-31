@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const userRouter = require("./api/routes/userRouter.js");
 const { configDB } = require("./api/db/configDB.js");
-const { errorHandler } = require("./api/middleware/errorHandler.js");
+const { errorHandler } = require("./api/middlewares/errorHandler.js");
 
 const app = express();
 dotenv.config();
