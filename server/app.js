@@ -3,9 +3,12 @@ const dotenv = require("dotenv");
 const userRouter = require("./api/routes/userRouter.js");
 const { configDB } = require("./api/db/configDB.js");
 const { errorHandler } = require("./api/middlewares/errorHandler.js");
+const cors = require("cors");
 
 const app = express();
 dotenv.config();
+
+app.use(cors());
 
 app.use(express.json());
 
